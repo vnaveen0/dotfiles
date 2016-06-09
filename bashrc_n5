@@ -1,0 +1,53 @@
+#set .bash_profile
+
+# DO NOT USE THIS -->  export TERM=xterm-256color
+#PATH=$PATH:/p/amoeba/shared/Apps/tmux-1.9/bin/
+#PATH=/home/nvedula/Apps/vim74/bin:$PATH
+
+# if [ $HOSTNAME == "cs-amoeba.cs.surrey.sfu.ca" ]; then
+      # export TERM=xterm-256color
+#   #alias vim='/usr/bin/vim'
+# fi
+#
+#export PATH=/home/nvedula/Apps/vim-build/bin:$PATH
+#CUDA
+#export CUDA_HOME=/usr/local/cuda-6.5 
+#export LD_LIBRARY_PATH=${CUDA_HOME}/lib64 
+#export PATH=${CUDA_HOME}/bin:${PATH} 
+#export PATH=$PATH:/usr/local/cuda/bin
+#source ~/.bash_profile
+
+
+
+
+#ALADDIN and LLVM_TRACER
+
+
+#export LLVM_HOME=/home/nvedula/software/llvm/llvm-3.4.2.src
+#export PATH=/home/nvedula/software/llvm/build-3.4.2/Release+Asserts/bin:$PATH 
+export LLVM_HOME=/home/nvedula/software/llvm-3.4.0/llvm-3.4
+export LLVM_BIN=/home/nvedula/software/llvm-3.4.0/llvm-3.4/build-3.4.0/Release+Asserts
+export PATH=/home/nvedula/software/llvm-3.4.0/llvm-3.4/build-3.4.0/Release+Asserts/bin:$PATH 
+export LD_LIBRARY_PATH=$LLVM_HOME/lib/:$LD_LIBRARY_PATH 
+
+export TRACER_HOME=/home/nvedula/Hydra/LLVM-TRACER-local/ 
+#export TRACER_HOME=/home/nvedula/LLVM/LLVM-Tracer
+export ALADDIN_HOME=/home/nvedula/Hydra/ALADDIN-local
+#export ALADDIN_HOME=/home/nvedula/LLVM/ALADDIN 
+export BOOST_ROOT=/p/amoeba/shared/lib/lib64/boost_1_55_0/
+export LD_LIBRARY_PATH=$BOOST_ROOT/stage/lib:$LD_LIBRARY_PATH
+
+
+
+#export PATH=/home/nvedula/software/llvm-3.4.0/aclocal-1.9.6/build:/home/nvedula/software/llvm-3.4.0/autoconf-2.60/build-autoconf-2.60/bin:$PATH
+#export PATH=$PATH:/home/nvedula/bench/parsec-3.0/bin/
+
+# #############################3
+# # Color Pallette
+# # Base16 Shell
+# BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+# [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+# #############################
+# ### Solarized terminal colors
+eval `dircolors /home/nvedula/solarized-test/dircolors-solarized/dircolors.256dark`
