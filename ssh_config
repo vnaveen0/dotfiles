@@ -1,0 +1,7 @@
+#In .ssh/config file
+#substitute for ssh username@Hostname
+Host 238 
+	User nvedula 
+	Hostname nml-bla-bla
+
+  
