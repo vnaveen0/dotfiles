@@ -1,4 +1,3 @@
-
 " colorscheme elflord
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -6,7 +5,7 @@
 
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " This is the Vundle package, which can be found on GitHub.
@@ -28,6 +27,9 @@ Plugin 'tComment'
 Plugin 'valloric/youcompleteme'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Add many popular colorschemes
+Plugin 'flazz/vim-colorschemes'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin 'chriskempson/base16-vim'
 "     """""Plugin 'chriskempson/base16-shell'
 " colorscheme base16-ocean
@@ -35,14 +37,14 @@ Plugin 'valloric/youcompleteme'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
   "" Solarized colorscheme 
 Plugin 'altercation/vim-colors-solarized'
-          """ Plugin 'altercation/solarized'
 set term=screen-256color-bce
 let g:solarized_termcolors=256
-colorscheme solarized
+" colorscheme solarized
+colorscheme wombat
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
-set background=dark
-" set background=light
+" set background=dark
+set background=light
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " AirLine
@@ -52,7 +54,7 @@ set laststatus=2
 " let g:airline_theme='base256'
 " let g:airline_theme='solarized'
 " let g:airline_theme='base16_monokai'
-let g:airline_theme='base16_ocean'
+" let g:airline_theme='base16_ocean'
 " AirlineTheme solarized
 " AirlineRefresh
 
@@ -174,6 +176,7 @@ nnoremap <C-p> :bprevious<CR>
 " Vim backspace problems - trying solns
 set backspace=indent,eol,start
 " try :help i_backspacing
+
 
 
 
